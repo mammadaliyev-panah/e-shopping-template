@@ -1,0 +1,135 @@
+$color: #eb4800;
+$size14: 14px;
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('../images/wall.png');
+}
+
+.underline{
+    margin: 0 auto;
+    width: 100px;
+    height: 3px;
+    background-color: $color;
+}
+
+%slideSpecial{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cartBtn{
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    margin-bottom: 3px;
+    background-color: $color;
+    color: white;
+}
+.detailBtn{
+    width: 70%;
+    background-color: gray;
+    color: white;
+}
+
+%pageHeaders{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+%pageOverlays{
+    width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
+        color: white;
+        text-align: center;
+        font-family: 'Quantico', sans-serif;
+        position: relative;
+        padding-left: 0;
+}
+
+
+%pageHeaderText{
+    top: 50%;
+     left: 50%;
+     position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+/*PRELOADER*/
+.preloader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: white;
+    transition: 2s;
+    .preloaderContent{
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    %preloaderGeneral{
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: 2s linear infinite;
+    }
+    .preloader1{
+        @extend %preloaderGeneral;
+        border-bottom: 5px solid $color;
+        // transform: rotateX(40deg) rotateY(-50deg) rotateZ(0);
+        animation-name: first; 
+    }
+    .preloader2{
+        @extend %preloaderGeneral;
+        border-right: 5px solid green;
+        // transform: rotateX(70deg) rotateY(0) rotateZ(0);
+        animation-name: second;
+    }
+    .preloader3{
+        @extend %preloaderGeneral;
+        border-top: 5px solid blue;
+        // transform: rotateX(40deg) rotateY(50deg) rotateZ(0);
+        animation-name: third;
+    }
+
+    @keyframes first{
+        0% {transform: rotateX(40deg) rotateY(-50deg) rotateZ(0)}
+        100% {transform: rotateX(40deg) rotateY(-50deg) rotateZ(360deg);}
+    }
+
+    @keyframes second{
+        0% { transform: rotateX(70deg) rotateY(0) rotateZ(0)}
+        100% { transform: rotateX(70deg) rotateY(0) rotateZ(360deg)}
+    }
+
+    @keyframes third{
+        0% {transform: rotateX(40deg) rotateY(50deg) rotateZ(0)}
+        100% {transform: rotateX(40deg) rotateY(50deg) rotateZ(360deg)}
+    }
+
+    // @keyframes fadeOut{
+    //     0% { 
+    //         opacity : 1}
+    //     100% {opacity : 0}
+    // }   
+}
+
+
+

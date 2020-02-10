@@ -1,0 +1,73 @@
+/* HOME PAGE */
+@media screen and (max-width: 1200px) {
+  #features #productSlider .btn a {
+    font-size: 14px; }
+  #features #newProducts .btn a {
+    font-size: 14px; }
+
+  #newProducts .btn a {
+    font-size: 14px; } }
+@media screen and (max-width: 992px) {
+  .registration .searchForm {
+    margin: 0 auto; }
+  .registration .loginBlock {
+    width: 100%;
+    text-align: center; }
+
+  #mySlider h1 {
+    font-size: 28px; }
+  #mySlider h3 {
+    font-size: 24px; }
+
+  #features #productSlider .btn, #newProducts .card-body .btn {
+    width: 130px;
+    display: inline-block;
+    margin-bottom: 0; }
+
+  #footer .letter .letterHead {
+    width: 60%;
+    margin: 0 auto; }
+  #footer .letter form {
+    width: 60%;
+    margin: 0 auto; }
+  #footer .letter .sendin a {
+    font-size: 14px; }
+
+  .categories {
+    padding-top: 50px; } }
+@media screen and (max-width: 768px) {
+  #mySlider h1 {
+    font-size: 24px; }
+  #mySlider h3 {
+    font-size: 22px; }
+
+  #footer .infoBlock {
+    text-align: center;
+    margin-bottom: 20px; }
+    #footer .infoBlock ul {
+      width: 80%;
+      margin: 0 auto;
+      text-align: left; }
+      #footer .infoBlock ul li {
+        width: 100%; }
+  #footer .social .socialHead {
+    width: 80%; }
+  #footer .letter .letterHead {
+    width: 80%; }
+  #footer .letter form {
+    width: 80%; }
+
+  .productInfo {
+    padding-top: 50px; } }
+/* CHECKOUT PAGE */
+@media screen and (max-width: 576px) {
+  .checkoutMain .returning {
+    padding-top: 20px; }
+  .checkoutMain .yourAddress {
+    padding-top: 20px; }
+
+  /* LOGIN OR REGISTRATION PAGE */
+  .logReg .registration {
+    padding-top: 20px; } }
+
+/*# sourceMappingURL=media.css.map */
